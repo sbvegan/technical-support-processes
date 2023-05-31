@@ -23,3 +23,25 @@ E -- 5. Document and update --> F[Resolution and Closure]
 F -- 6. Analyze and improve --> A
 click B "javascript:window.location.href='./test.md'" "text"
 ```
+
+```plantuml
+@startuml
+participant A
+participant B
+participant C
+participant D
+
+A -> B: Message
+B -> C: Message
+C -> D: Message
+@enduml
+```
+
+```dot
+digraph {
+  A -> B;
+  B -> C;
+  C -> D;
+}
+```
+
