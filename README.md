@@ -61,3 +61,9 @@ stateDiagram-v2
         recurring issues, hotspots, etc.
     end note
 ```
+
+### Sup-processes and resources
+
+todo: define subprocesses and link the markdown files
+
+todo: add resource attachments
