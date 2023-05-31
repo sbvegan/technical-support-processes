@@ -15,6 +15,8 @@ The following technical support process accounts for these high-level areas:
 
 ## Process Map
 
+For more information on process mapping, please use the README of my DAO process mapping [repository](https://github.com/sbvegan/dao-process-mapping).
+
 ***Note: this diagram utilizes Universal Process Notation (UPN), but with minor modifications to be more cohesive with GitHub (i.e. top to bottom, resource and subprocess links below).***
 
 The following is a high level process map and it is intended to be understandable by anyone in the organization. If you need further information or the subprocess of a box; there are links to that information below.
