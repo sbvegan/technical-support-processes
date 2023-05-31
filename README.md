@@ -1,6 +1,6 @@
 # Technical Support Processes
 
-The following technical support process takes into account high-level areas:
+The following technical support process accounts for these high-level areas:
 
 - **Ticketing System** - A central location to manage issues.
 - **Intake and Triage** - Gather information about the issue and client, assess, and determine the *categorization and prioritization*.
