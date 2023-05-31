@@ -24,11 +24,36 @@ An effective teechnical support process takes into account the following high-le
 1. **Analysis and Continuous Improvement** - Utilize your *Knowledge Base* to identify key insights. Ex. trends, recurring issues, and general hotspots.
     - todo: resource: tips and tricks
 
-## Process Map
-
-![technical suport process UPN](./technical-support-process.jpeg)
-
-scratch-pad:
-
 ```mermaid
+---
+title: Technical Support Process
+---
+stateDiagram-v2
+    SUBMIT: Submit issue\nR - Client
+    INTAKE: Gather information\nRA - TSM
+    TRIAGE: Categorize, prioritize, and acknowledge\nRA - TSM
+    RESOLVE: Resolve issue\nRA - TSM
+    ESCALATE: Escalate issue\nRA - TSM\nC - Engineering
+    CLOSE: Close issue\nRA - TSM\nI - Client
+    DOCUMENTATION: Update knowledge base\nRA - TSM
+
+    [*] --> SUBMIT: client finds issue
+    SUBMIT --> INTAKE: Technical issue
+    INTAKE --> TRIAGE: 
+    TRIAGE --> RESOLVE: troubleshoot
+    RESOLVE --> COMMUNICATE: Fix in progress
+    COMMUNICATE: Communicate progress.\nRA - TSM\nI - Client
+    RESOLVE --> ESCALATE: Not resolved
+    RESOLVE --> CLOSE: Resolved
+    ESCALATE --> CLOSE: Resolved
+    CLOSE --> DOCUMENTATION: Document
+    DOCUMENTATION --> [*]: client issue resolved
+
+    NOTE: ---Key---\nRACI (Responsible, Accountable, Consulted, Informed)\nTSM = Technical Support Manager
+
+    note right of DOCUMENTATION
+        As you build your knowledge base,
+        perform analysis to identify trends,
+        recurring issues, hotspots, etc.
+    end note
 ```
