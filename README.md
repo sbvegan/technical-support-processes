@@ -42,6 +42,7 @@ title: Technical Support Process
 ---
 stateDiagram-v2
     SUBMIT: 1. Submit issue\nR - Client\nLinear
+    NONTECHNICAL: Handoff to different team\nR - TSM
     INTAKE: 2. Gather information\nRA - TSM\nLinear
     TRIAGE: 3. Categorize, prioritize, and acknowledge\nRA - TSM\nLinear
     RESOLVE: 4. Resolve issue\nRA - TSM
@@ -50,7 +51,8 @@ stateDiagram-v2
     CLOSE: 7. Close issue\nRA - TSM\nI - Client\nLinear
     DOCUMENTATION: 8. Update knowledge base\nRA - TSM
 
-    [*] --> SUBMIT: client finds issue
+    [*] --> SUBMIT: Client finds issue
+    SUBMIT --> NONTECHNICAL: Non-technical issue
     SUBMIT --> INTAKE: Technical issue
     INTAKE --> TRIAGE: 
     TRIAGE --> RESOLVE: troubleshoot
@@ -73,7 +75,7 @@ stateDiagram-v2
 ### Subprocesses and resources
 
 1. Submit issue
-    - [todo: subprocess](./subprocesses/submit-issue.md)
+    - [subprocess](./subprocesses/submit-issue.md)
 2. Gather information
     - todo: subprocess
 3. Categorize, prioritize, and acknowledge
