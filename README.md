@@ -2,46 +2,25 @@
 
 An effective teechnical support process takes into account the following high-level areas/steps:
 
-1. Ticketing System
-2. Categorization and Prioritization
-3. Intake and Triage
-4. Initial Response
-5. Troubleshooting and Resolution
-6. Communication and Updates
-7. Escalation
-8. Documentation and Knowledge Base
-9. Resolution and Closure
-10. Analysis and Continuous Improvement
+1. **Ticketing System** - A central location to manage issues.
+1. **Intake and Triage** - Gather information about the issue and client, assess, and determine the *categorization and prioritization*.
+1. **Categorization and Prioritization** - Categorize the technical realm the issue falls under. Prioritize issue based on the urgency and impact of the issue.
+1. **Initial Response** - Acknowledge the clients issue and provide estimated time for fix. *Note: idk about this one. its good to keep continual communication and updates, but I want to manage expectations. I'll need to get into the weeds before I can even provide accurate time estimates.*
+1. **Troubleshooting and Resolution** - Assign the task of servicing the issue (ideally to a domain expert), they investigate, identify the root cause, and then resolve the issue.
+1. **Communication and Updates** - Maintain continuous communication with the client on updates throughout the *troubleshooting and resolution* sub-process.
+1. **Escalation** - When an issue is blocked, a sub-process for dealing with more complex issues is spun up. Continue with *Communication and Updates* until resolution.
+1. **Documentation and Knowledge Base** - Document the steps taken to resolve the issue. Both troubleshooting and the fix. Build up a knowledge base of case studies.
+1. **Resolution and Closure** - Notify the client when you have a fix, receive client verification of resolution, and then close the issue.
+1. **Analysis and Continuous Improvement** - Utilize your *Knowledge Base* to identify key insights. Ex. trends, recurring issues, and general hotspots.
 
 ```mermaid
 graph LR
-A[Ticketing System] -- 1. Submit support request --> B(Intake and Triage)
-B -- 2. Categorization and Prioritization --> C[Initial Response]
-C -- 3. Acknowledge receipt --> D[Troubleshooting and Resolution]
-D -- 4. Regular communication --> E[Escalation]
-E -- 5. Document and update --> F[Resolution and Closure]
-F -- 6. Analyze and improve --> A
-click B "https://github.com/sbvegan/technical-support-processes/blob/main/test.md" "text"
+src(( )) --> |issue submitted| 1
 ```
 
-```plantuml
-@startuml
-participant A
-participant B
-participant C
-participant D
-
-A -> B: Message
-B -> C: Message
-C -> D: Message
-@enduml
+scratch-pad:
+```mermaid
+graph LR
+    Start((Start)) --> |Arrow| ArrowNode(( ))
+    ArrowNode --> |Into Node| EndNode((End))
 ```
-
-```dot
-digraph {
-  A -> B;
-  B -> C;
-  C -> D;
-}
-```
-
