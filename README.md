@@ -33,20 +33,20 @@ The following technical support process takes into account high-level areas:
 title: Technical Support Process
 ---
 stateDiagram-v2
-    SUBMIT: Submit issue\nR - Client
-    INTAKE: Gather information\nRA - TSM
-    TRIAGE: Categorize, prioritize, and acknowledge\nRA - TSM
-    RESOLVE: Resolve issue\nRA - TSM
-    ESCALATE: Escalate issue\nRA - TSM\nC - Engineering
-    CLOSE: Close issue\nRA - TSM\nI - Client
-    DOCUMENTATION: Update knowledge base\nRA - TSM
+    SUBMIT: 1. Submit issue\nR - Client
+    INTAKE: 2. Gather information\nRA - TSM
+    TRIAGE: 3. Categorize, prioritize, and acknowledge\nRA - TSM
+    RESOLVE: 4. Resolve issue\nRA - TSM
+    COMMUNICATE: 5. Communicate progress.\nRA - TSM\nI - Client
+    ESCALATE: 6. Escalate issue\nRA - TSM\nC - Engineering
+    CLOSE: 7. Close issue\nRA - TSM\nI - Client
+    DOCUMENTATION: 8. Update knowledge base\nRA - TSM
 
     [*] --> SUBMIT: client finds issue
     SUBMIT --> INTAKE: Technical issue
     INTAKE --> TRIAGE: 
     TRIAGE --> RESOLVE: troubleshoot
     RESOLVE --> COMMUNICATE: Fix in progress
-    COMMUNICATE: Communicate progress.\nRA - TSM\nI - Client
     RESOLVE --> ESCALATE: Not resolved
     RESOLVE --> CLOSE: Resolved
     ESCALATE --> CLOSE: Resolved
