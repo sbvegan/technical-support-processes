@@ -15,7 +15,22 @@ The following technical support process accounts for these high-level areas:
 
 ## Process Map
 
-For more information on process mapping, please use the README of my DAO process mapping [repository](https://github.com/sbvegan/dao-process-mapping).
+For more information on process mapping, please use the README of my DAO process mapping [repository](https://github.com/sbvegan/dao-process-mapping). Generally you map a process how it currently is and then scrutinize the process to improve it. This is a idealized process and exercise I'm doing to prepare myself for a technical support role.
+
+```mermaid
+---
+title: UPN Example
+---
+stateDiagram-v2
+WHAT: WHAT happens (start with verb)\nWHO is responsible? (RACI)\nWHAT systems are used?\nHOW - drill down to next level\nHOW - attached notes, files, URL, images, etc.
+
+note left of WHAT
+The HOW are provided as\n links below the diagram.
+end note
+
+[*] --> WHAT: WHEN does it happen?
+WHAT --> [*]: WHY does it happen?
+```
 
 ***Note: this diagram utilizes Universal Process Notation (UPN), but with minor modifications to be more cohesive with GitHub (i.e. top to bottom, resource and subprocess links below).***
 
@@ -58,7 +73,7 @@ stateDiagram-v2
 ### Subprocesses and resources
 
 1. Submit issue
-    - todo: subprocess
+    - [todo: subprocess](./subprocesses/submit-issue.md)
 2. Gather information
     - todo: subprocess
 3. Categorize, prioritize, and acknowledge
