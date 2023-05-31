@@ -21,7 +21,7 @@ C -- 3. Acknowledge receipt --> D[Troubleshooting and Resolution]
 D -- 4. Regular communication --> E[Escalation]
 E -- 5. Document and update --> F[Resolution and Closure]
 F -- 6. Analyze and improve --> A
-click B "javascript:window.location.href='./test.md'" "text"
+click B "https://google.com" "text"
 ```
 
 ```plantuml
