@@ -77,7 +77,7 @@ stateDiagram-v2
 1. Submit issue
     - [subprocess](./subprocesses/submit-issue.md)
 2. Gather information
-    - todo: subprocess
+    - [todo: subprocess](./subprocesses/gather-information.md)
 3. Categorize, prioritize, and acknowledge
     - todo: subprocess
     - todo: resource: category descriptions
