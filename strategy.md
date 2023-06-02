@@ -32,15 +32,7 @@ Process mapping gets everyone on the same page. The anaylsis reduces information
 
 ## Version control
 
-Version control can also be applied to the process map to see how it evolves over time and to rollback when a bug in the system is introduced. We can try apply SemVer:
-
-MAJOR.MINOR.PATCH
-
-MAJOR - increment when we make an incompatible change
-
-MINOR - increment when we add backwards-compatible functionality
-
-PATCH - increment when making backwards-compatible bug fixes
+Version control can also be applied to the process map to see how it evolves over time. This also eliminates the issue of people using out of date documentation/processes. The latest release will be the reference point and new releases can be rolled out at the end of each cycle/sprint.
 
 ### Changelog
 
