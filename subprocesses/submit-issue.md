@@ -22,6 +22,7 @@ stateDiagram-v2
     GITHUB --> join_state
     TELEGRAM --> join_state
     DISCORD --> join_state
+    CONTACT --> join_state
     join_state --> [*]: Issue created
 
     NOTE: ---Key---\nRACI (Responsible, Accountable, Consulted, Informed)\nTSM = Technical Support Manager
